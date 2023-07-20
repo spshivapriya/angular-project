@@ -1,0 +1,36 @@
+<h2>Manage Users list</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email ID</th>
+            <th>Approval</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let user of users">
+        <tr>
+
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.emailId}}</td>
+            <td>
+                <button (click)=" approval(user.id)" *ngIf="user.approval==false" style="background-color: red;"
+                    class="btn btn-info">Disapproved</button>
+                <button (click)=" approval(user.id)" *ngIf="user.approval==true" style="background-color: green;"
+                    class="btn btn-info">Approved</button>
+            </td>
+            <td>
+                
+                <button (click)="deleteUser(user.id)" class="btn btn-danger" >Delete</button>
+            </td>
+
+
+        </tr>
+    </tbody>
+
+</table>
+

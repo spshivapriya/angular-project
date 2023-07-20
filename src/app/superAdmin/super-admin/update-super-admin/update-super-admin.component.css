@@ -1,0 +1,37 @@
+/* Add custom styles for the update-employee form */
+.update-employee-form {
+    margin: 20px;
+}
+
+.update-employee-form h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.update-employee-form .form-group {
+    margin-bottom: 20px;
+}
+
+.update-employee-form label {
+    font-weight: bold;
+}
+
+.update-employee-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.update-employee-form button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update-employee-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
