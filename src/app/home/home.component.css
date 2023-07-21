@@ -1,6 +1,26 @@
 bode {
     margin: 0px;
     padding: 0px;
+    background: linear-gradient(45deg, #00f, #f00);
+    /* Replace with your desired background */
+    background-size: 200% 200%;
+    /* Increase the size to create a smooth animation */
+
+    /* Animation settings */
+    animation: gradientAnimation 5s ease infinite;
+    /* Adjust the duration and other animation properties as needed */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+        /* Starting position of the background gradient */
+    }
+
+    100% {
+        background-position: 100% 50%;
+        /* Ending position of the background gradient */
+    }
 }
 
 
@@ -22,7 +42,7 @@ bode {
 
 .middle_div:hover {
     cursor: pointer;
-    color:white;
+    color: blue;
 }
 
 .middle_div {
@@ -35,5 +55,26 @@ bode {
 
 .page_div {
     margin-left: 400px;
+
+}
+
+.footer_comp {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    margin-top: 300px;
+    background-color: lightblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+.footer_comp p {
+
+    margin: 0px;
+    padding: 0px;
 
 }
